@@ -75,7 +75,7 @@ async function loadStadien(url) {
             return L.marker(latlng, {
                 icon: L.icon({
                     iconUrl: `icons/stadium.png`,
-                    //iconAnchor: [35,40]
+                    iconAnchor: [17,36]
 
                 })
             }).bindPopup(popup);
@@ -100,6 +100,8 @@ async function loadStadien(url) {
                 //console.log(marker.feature.properties.Stadio_Name)
                 map.setView(marker.getLatLng(), 16);
                 marker.openPopup();
+                
+            
             }
         })
     }
