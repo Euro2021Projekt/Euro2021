@@ -31,3 +31,9 @@ L.control.fullscreen().addTo(map);
 L.control.scale({
     imperial: false,
 }).addTo(map);
+
+let miniMap = new L.Control.MiniMap(
+    L.tileLayer.provider("Esri.WorldImagery"), {
+        toggleDisplay: true
+    }
+).addTo(map);
