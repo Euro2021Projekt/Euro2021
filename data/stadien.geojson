@@ -1,0 +1,203 @@
+{
+    "features": [
+      {
+        "id": "1",
+        "geometry": {
+          "coordinates": [
+            11.624372,
+            48.218807
+          ],
+          "type": "Point"
+        },
+        "properties": {
+          "Land": "Deutschland",
+          "Stadt": "München",
+          "Stadio_Name": "Allianz Arena",
+          "Spiele_Num": "4",
+          "Kapazität": 75024
+        },
+        "type": "Feature"
+      },
+      {
+        "id": "2",
+        "geometry": {
+          "coordinates": [
+            26.152365,
+            44.437233
+          ],
+          "type": "Point"
+        },
+        "properties": {
+          "Land": "Rumänien",
+          "Stadt": "Bukarest",
+          "Stadio_Name": "Arena Națională",
+          "Spiele_Num": "4",
+          "Kapazität": 55600
+        },
+        "type": "Feature"
+      },
+      {
+        "id": "3",
+        "geometry": {
+          "coordinates": [
+            49.919270,
+            40.429928
+          ],
+          "type": "Point"
+        },
+        "properties": {
+          "Land": "Aserbaidschan",
+          "Stadt": "Baku",
+          "Stadio_Name": "Olympic Stadium",
+          "Spiele_Num": "4",
+          "Kapazität": 68000
+        },
+        "type": "Feature"
+      },
+      {
+        "id": "4",
+        "geometry": {
+          "coordinates": [
+            -6.005153,
+            37.417099
+          ],
+          "type": "Point"
+        },
+        "properties": {
+          "Land": "Spanien",
+          "Stadt": "Sevilla",
+          "Stadio_Name": "Estadio La Cartuja",
+          "Spiele_Num": "4",
+          "Kapazität": 57619
+        },
+        "type": "Feature"
+      },
+      {
+        "id": "5",
+        "geometry": {
+          "coordinates": [
+            30.219210,
+            59.972733
+          ],
+          "type": "Point"
+        },
+        "properties": {
+          "Land": "Russland",
+          "Stadt": "Sankt Petersburg",
+          "Stadio_Name": "Krestowski Stadion",
+          "Spiele_Num": "7",
+          "Kapazität": 68134
+        },
+        "type": "Feature"
+      },
+      {
+        "id": "6",
+        "geometry": {
+          "coordinates": [
+            -4.252687,
+            55.825741	
+          ],
+          "type": "Point"
+        },
+        "properties": {
+          "Land": "Schotland",
+          "Stadt": "Glasgow",
+          "Stadio_Name": "Hampden Park",
+          "Spiele_Num": "4",
+          "Kapazität": 51866
+        },
+        "type": "Feature"
+      },
+      {
+        "id": "7",
+        "geometry": {
+          "coordinates": [
+            4.941771,
+            52.314342		
+          ],
+          "type": "Point"
+        },
+        "properties": {
+          "Land": "Niederlande",
+          "Stadt": "Amsterdam",
+          "Stadio_Name": "Johan Cruyff Arena",
+          "Spiele_Num": "4",
+          "Kapazität": 54990
+        },
+        "type": "Feature"
+      },
+      {
+        "id": "8",
+        "geometry": {
+          "coordinates": [
+            12.571634,
+            55.702660			
+          ],
+          "type": "Point"
+        },
+        "properties": {
+          "Land": "Dänemark",
+          "Stadt": "Kopenhagen",
+          "Stadio_Name": "Telia Parken",
+          "Spiele_Num": "4",
+          "Kapazität": 38065
+        },
+        "type": "Feature"
+      },
+      {
+        "id": "9",
+        "geometry": {
+          "coordinates": [
+            19.096394,
+            47.503174				
+          ],
+          "type": "Point"
+        },
+        "properties": {
+          "Land": "Ungarn",
+          "Stadt": "Budapest",
+          "Stadio_Name": "Puskás Aréna",
+          "Spiele_Num": "4",
+          "Kapazität": 65000
+        },
+        "type": "Feature"
+      },
+      {
+        "id": "10",
+        "geometry": {
+          "coordinates": [
+            12.454208,
+            41.934017				
+          ],
+          "type": "Point"
+        },
+        "properties": {
+          "Land": "Italien",
+          "Stadt": "Rom",
+          "Stadio_Name": "Stadio Olimpico",
+          "Spiele_Num": "4",
+          "Kapazität": 72698
+        },
+        "type": "Feature"
+      },
+      {
+        "id": "11",
+        "geometry": {
+          "coordinates": [
+            -0.279863,
+            51.556122				
+          ],
+          "type": "Point"
+        },
+        "properties": {
+          "Land": "England",
+          "Stadt": "London",
+          "Stadio_Name": "Wembley Stadium",
+          "Spiele_Num": "8",
+          "Kapazität": 90000
+        },
+        "type": "Feature"
+      }
+ ],
+    "type": "FeatureCollection"
+}
