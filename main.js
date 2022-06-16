@@ -1,7 +1,11 @@
+
+
 let Prag = {
     lat: 50.088611,
     lng: 14.421389,
 };
+
+
 
 let startLayer = L.tileLayer.provider("Esri.WorldImagery");
 
@@ -24,9 +28,7 @@ let layerControl = L.control.layers({
 
     "Topographische Karte": L.tileLayer.provider("OpenTopoMap"),
 
-    "Schwarz-Weiß Karte": L.tileLayer.provider("Stamen.Toner"),
-   }, {
-       "Stadien": overlays.stadien
+    "Schwarz-Weiß Karte": L.tileLayer.provider("Stamen.Toner"), 
 }).addTo(map);
 
 layerControl.expand();
@@ -42,3 +44,32 @@ let miniMap = new L.Control.MiniMap(
         toggleDisplay: true
     }
 ).addTo(map);
+
+// Stadien in der Karte implementieren
+
+async function loadStadien(url) {
+    let response = await fetch(url);
+    let geojson = await response.json();
+    //console.log(`Geojson stadien: `, geojson)
+
+    let overlay = L.featureGroup();
+    layerControl.addOverlay(overlay, "Stadien");
+    overlay.addTo(map)
+
+    L.geoJSON(geojson, {
+        pointToLayer: function (geoJsonPoint, latlng) {
+            //console.log(geoJsonPoint.properties);
+            //console.log(geoJsonPoint.geometry.coordinates)
+            let popup = `
+            <strong>${geoJsonPoint.properties.Stadio_Name}</strong><br>
+            ${geoJsonPoint.properties.Land}, ${geoJsonPoint.properties.Stadt}<br>
+            Stadionkapazität: ${geoJsonPoint.properties.Kapazität} Zuschauer<br>
+            Anzahl der Spiele: ${geoJsonPoint.properties.Spiele_Num}
+            `;
+            return L.marker(latlng)
+
+        }
+    })
+}
+
+loadStadien("data/stadien.geojson")
