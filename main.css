@@ -17,20 +17,16 @@ main {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     max-height: 50px;
 }
 
 header h2 {
-    margin: 0;
-    color: antiquewhite;
+    margin: 2;
+    color: white;
+    text-shadow: 0 0 5px black;
 }
 
-header nav {
-    font-size: 0.9em;
-    font-weight: bold;
-    padding-top: 1em;
-}
 
 article {
     margin-top: 0.5em;
@@ -47,6 +43,9 @@ footer {
     font-family: "Roboto", sans-serif;
     font-size: 0.9em;
     margin-top: 0.5em;
+    color: white;
+    text-shadow: 0 0 5px black;
+    
 }
 
 footer nav {
