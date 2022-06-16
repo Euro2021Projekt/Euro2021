@@ -69,6 +69,7 @@ async function loadStadien(url) {
             return L.marker(latlng, {
                 icon: L.icon({
                     iconUrl: `icons/stadium.png`,
+                    //iconAnchor: [35,40]
 
                 })
             }).bindPopup(popup);
