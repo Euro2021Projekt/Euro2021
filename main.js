@@ -27,3 +27,7 @@ let layerControl = L.control.layers({
 layerControl.expand();
 
 L.control.fullscreen().addTo(map);
+
+L.control.scale({
+    imperial: false,
+}).addTo(map);
