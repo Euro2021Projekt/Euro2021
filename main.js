@@ -56,7 +56,7 @@ async function loadStadien(url) {
     layerControl.addOverlay(overlay, "Stadien");
     overlay.addTo(map)
 
-    L.geoJSON(geojson, {
+    let stadionLayer = L.geoJSON(geojson, {
         pointToLayer: function (geoJsonPoint, latlng) {
             
             // searchList Console
@@ -82,9 +82,32 @@ async function loadStadien(url) {
 
         }
     }).addTo(overlay);
-}
+
+    //Searchlist Funktion enablen
+
+    let form = document.querySelector("#searchForm");
+    form.suchen.onclick = function() {
+        console.log(form.stadion.value);
+        stadionLayer.eachLayer(function(marker){
+        //console.log(marker)
+            //console.log(marker.getLatLng())
+            //console.log(marker.getPopup())
+            //console.log(marker.feature.properties.Stadio_Name)
+
+            if(form.stadion.value == marker.feature.properties.Stadio_Name) {
+                //console.log(marker.getLatLng())
+                //console.log(marker.getPopup())
+                //console.log(marker.feature.properties.Stadio_Name)
+                map.setView(marker.getLatLng(), 16);
+                marker.openPopup();
+            }
+        })
+    }
+        
+            
+    }
 
 loadStadien("data/stadien.geojson")
 
-// Suchleiste erstellen
+
 
