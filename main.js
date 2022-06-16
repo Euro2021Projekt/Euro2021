@@ -24,3 +24,5 @@ let layerControl = L.control.layers({
     "Schwarz-Weiß Karte": L.tileLayer.provider("Stamen.Toner"),
 
 }).addTo(map);
+
+layerControl.expand();
