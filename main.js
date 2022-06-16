@@ -66,10 +66,15 @@ async function loadStadien(url) {
             Stadionkapazität: ${geoJsonPoint.properties.Kapazität} Zuschauer<br>
             Anzahl der Spiele: ${geoJsonPoint.properties.Spiele_Num}
             `;
-            return L.marker(latlng)
+            return L.marker(latlng, {
+                icon: L.icon({
+                    iconUrl: `icons/stadium.png`,
+
+                })
+            }).bindPopup(popup);
 
         }
-    })
+    }).addTo(overlay);
 }
 
 loadStadien("data/stadien.geojson")
