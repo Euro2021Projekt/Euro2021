@@ -1,0 +1,20 @@
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    max-height: 50px;
+}
+
+header h2 {
+    margin: 0;
+}
+
+header nav {
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-top: 1em;
+}
