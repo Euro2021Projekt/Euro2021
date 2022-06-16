@@ -58,8 +58,14 @@ async function loadStadien(url) {
 
     L.geoJSON(geojson, {
         pointToLayer: function (geoJsonPoint, latlng) {
-            //console.log(geoJsonPoint.properties);
-            //console.log(geoJsonPoint.geometry.coordinates)
+            
+            // searchList Console
+
+            searchList.innerHTML += `<option value= "${geoJsonPoint.properties.Stadio_Name}"></option`;
+
+            //console.log(document.querySelector("#searchList"));
+            //console.log(`<option value= "${geoJsonPoint.properties.Stadio_Name}"></option`);
+
             let popup = `
             <strong>${geoJsonPoint.properties.Stadio_Name}</strong><br>
             ${geoJsonPoint.properties.Land}, ${geoJsonPoint.properties.Stadt}<br>
@@ -79,3 +85,6 @@ async function loadStadien(url) {
 }
 
 loadStadien("data/stadien.geojson")
+
+// Suchleiste erstellen
+
