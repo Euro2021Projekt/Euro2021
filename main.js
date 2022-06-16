@@ -13,3 +13,14 @@ let map = L.map("map", {
         startlayer
     ],
 });
+
+let layerControl = L.control.layers({
+    "Orthofoto": startLayer,
+
+    "World Street Map": L.tileLayer.provider("Esri.WorldStreetMap"),
+
+    "Topographische Karte": L.tileLayer.provider("OpenTopoMap"),
+
+    "Schwarz-Weiß Karte": L.tileLayer.provider("Stamen.Toner"),
+
+}).addTo(map);
