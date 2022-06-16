@@ -5,6 +5,10 @@ let Prag = {
 
 let startLayer = L.tileLayer.provider("Esri.WorldImagery");
 
+let overlays = {
+    stadien: L.featureGroup()
+}
+
 let map = L.map("map", {
     center: [Prag.lat, Prag.lng],
     zoom: 4,
@@ -21,7 +25,8 @@ let layerControl = L.control.layers({
     "Topographische Karte": L.tileLayer.provider("OpenTopoMap"),
 
     "Schwarz-Weiß Karte": L.tileLayer.provider("Stamen.Toner"),
-
+   }, {
+       "Stadien": overlays.stadien
 }).addTo(map);
 
 layerControl.expand();
