@@ -1,16 +1,15 @@
-let center = {
+let Prag = {
     lat: 50.088611,
     lng: 14.421389,
-    title: "Center (Prag)"
 };
 
-let startlayer = L.tileLayer.provider("Esri.WorldImagery")
+let startLayer = L.tileLayer.provider("Esri.WorldImagery");
 
 let map = L.map("map", {
-    center: [center.lat, center.lng],
-    zoom: 2,
+    center: [Prag.lat, Prag.lng],
+    zoom: 4,
     layers: [
-        startlayer
+        startLayer
     ],
 });
 
