@@ -67,7 +67,7 @@ async function loadStadien(url) {
             //console.log(`<option value= "${geoJsonPoint.properties.Stadio_Name}"></option`);
 
             let popup = `
-            <strong>${geoJsonPoint.properties.Stadio_Name}</strong><br>
+            <strong>${geoJsonPoint.properties.Stadio_Name}</strong><br><hr>
             ${geoJsonPoint.properties.Land}, ${geoJsonPoint.properties.Stadt}<br>
             Stadionkapazität: ${geoJsonPoint.properties.Kapazität} Zuschauer<br>
             Anzahl der Spiele: ${geoJsonPoint.properties.Spiele_Num}
