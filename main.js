@@ -76,8 +76,6 @@ async function loadStadien(url) {
                 icon: L.icon({
                     iconUrl: `icons/stadium.png`,
                     iconAnchor: [17,36],
-                    class: "aws-div-ivon",
-
                 })
             }).bindPopup(popup);
 
