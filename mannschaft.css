@@ -1,4 +1,4 @@
-/* Stile für Portugalreise*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:ital@0;1&family=Roboto:wght@300&display=swap');
 
@@ -17,6 +17,10 @@ h2,
 h3 {
     font-family: 'Montserrat', sans-serif;
 
+}
+
+img.banner {
+    width: 100%;
 }
 
 header {
