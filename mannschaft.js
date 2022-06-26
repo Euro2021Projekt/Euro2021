@@ -24,13 +24,14 @@ let layerControl = L.control.layers({
 
 
 
-// DOC Hütten anzeigen
+// Länder anzeigen
 for (let länder of LÄNDER) {
     let popup = `
-        <h3>${länder.name}</h3>
-        <h4>${länder.info1}</h3>
+        <h1>${länder.name}</h1>
+        <h3>${länder.info2}</h3>
+        <h3>${länder.info1}</h3>
+        
         <hr>
-        <p>${länder.info2}</p>
         <img src="${länder.image}" alt="Vorschaubild">
         
     `;
