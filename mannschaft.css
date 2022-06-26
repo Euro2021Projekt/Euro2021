@@ -73,3 +73,10 @@ footer {
 
 }
 
+footer .back {
+    float: left;
+}
+
+footer .next {
+    float: right;
+}
