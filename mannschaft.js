@@ -1,8 +1,7 @@
-
 let zoom = 4;
 
 // Kordinate: Zentrum von Europa
-let coords =[47.751569, 1.675063] ;
+let coords = [47.751569, 1.675063];
 
 let startLayer = L.tileLayer.provider("OpenStreetMap.Mapnik");
 
@@ -38,7 +37,7 @@ for (let länder of LÄNDER) {
 
 
     L.circleMarker([länder.lat, länder.lng], {
-    
+
     }).addTo(map).bindPopup(popup);
 }
 
