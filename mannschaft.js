@@ -40,8 +40,7 @@ for (let länder of LÄNDER) {
         icon: L.icon({
             iconUrl: länder.image,
             iconSize: [30, 30],
-            iconAnchor: [0,0],
-            popupAnchor: [0, -37]
+            popupAnchor: [0, -10]
         })
 
     }).addTo(map).bindPopup(popup);
