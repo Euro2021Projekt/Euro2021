@@ -1,4 +1,4 @@
-const Länder = [{
+const LÄNDER = [{
     "name": "Belgien",
     "info1": "Kapitän: ",
     "info2": "EM-Teilnahmen: 6",
