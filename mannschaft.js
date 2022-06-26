@@ -36,7 +36,13 @@ for (let länder of LÄNDER) {
     `;
 
 
-    L.circleMarker([länder.lat, länder.lng], {
+    L.marker([länder.lat, länder.lng], {
+        icon: L.icon({
+            iconUrl: länder.image,
+            iconSize: [30, 30],
+            iconAnchor: [0,0],
+            popupAnchor: [0, -37]
+        })
 
     }).addTo(map).bindPopup(popup);
 }
