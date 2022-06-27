@@ -3,12 +3,12 @@
 
 
 body {
-    font-family: "Open Sans", sans-serif;
-    outline: auto white;
+    background-color: rgb(154, 154, 154);
+    font-family: "Open Sans", sans-serif;  
 }
 
 main {
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
 }
 
