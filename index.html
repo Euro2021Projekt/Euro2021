@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,9 @@
     <link rel="shortcut icon" href="icons/logo.png" type="image/png">
 
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
@@ -21,9 +23,10 @@
         integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
         crossorigin=""></script>
 
-    <!--Leaflet Providers plugin
-    -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.13.0/leaflet-providers.min.js" integrity="sha512-5EYsvqNbFZ8HX60keFbe56Wr0Mq5J1RrA0KdVcfGDhnjnzIRsDrT/S3cxdzpVN2NGxAB9omgqnlh4/06TvWCMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Leaflet Providers plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.13.0/leaflet-providers.min.js"
+        integrity="sha512-5EYsvqNbFZ8HX60keFbe56Wr0Mq5J1RrA0KdVcfGDhnjnzIRsDrT/S3cxdzpVN2NGxAB9omgqnlh4/06TvWCMw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Leaflet fullscreen plugin -->
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
@@ -31,19 +34,21 @@
         rel='stylesheet' />
 
     <!-- Leaflet Minimap Plugin einbauen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.js"
+        integrity="sha512-WL3nAJlWFKoDShduxQRyY3wkBnQsINXdIfWIW48ZaPgYz1wYNnxIwFMMgigzSgjNBC2WWZ8Y8/sSyUU6abuF0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.js" integrity="sha512-WL3nAJlWFKoDShduxQRyY3wkBnQsINXdIfWIW48ZaPgYz1wYNnxIwFMMgigzSgjNBC2WWZ8Y8/sSyUU6abuF0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"
+        integrity="sha512-efbAfGnrnjA+hLwOLu91W034fBGPsMwZMVCTwLUI2PDX/m7rOiuhYZ+D2mZ8rKcpC/I/7pdgoL8T4eYvMHNoQg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css" integrity="sha512-efbAfGnrnjA+hLwOLu91W034fBGPsMwZMVCTwLUI2PDX/m7rOiuhYZ+D2mZ8rKcpC/I/7pdgoL8T4eYvMHNoQg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-     
-     <!-- eigene Stile und Hauptskript -->
-     <link rel="stylesheet" href="stadien.css">
-     <script defer src="stadien.js"></script>
- 
+    <!-- eigene Stile und Hauptskript -->
+    <link rel="stylesheet" href="stadien.css">
+    <script defer src="stadien.js"></script>
 
 </head>
-<body >
+
+<body>
     <main class="shadow">
         <header>
             <img class="banner" src="icons/banner_stadion.jpg" alt="Euro 2021" class="banner">
@@ -51,26 +56,37 @@
         <article>
             <h1>Euro 2021 Stadionübersicht</h1>
             <p>
-                Im Rahmen der Fußballeuropameisterschaft 2021, fungierten 11 Stadien in 11 verschiedenen Städten und Ländern als Austragungsort der Spiele. In der Stadionübersichtskarte, kann man sich die verschiedenen Stadien näher anschauen und weitere Informationen ,bezüglich der Austragungsorte sammeln.
+                Im Rahmen der Fußballeuropameisterschaft 2021, fungierten 11 Stadien in 11 verschiedenen Städten und
+                Ländern als Austragungsort der Spiele. In der Stadionübersichtskarte, kann man sich die verschiedenen
+                Stadien näher anschauen und weitere Informationen ,bezüglich der Austragungsorte sammeln.
             </p>
             <h2>Stadien</h2>
             <p>
                 Folgende Stadien fungierten als Austragungsort der Europameisterschaft:
                 <ul style="list-style: none;">
-                    <li><img class="icon" src="icons/länder/land2.png" alt="Flaggen icon" class="icon"> Stadio Olimpico</li>
-                    <li><img class="icon" src="icons/länder/land4.png" alt="Flaggen icon" class="icon"> Krestowski Stadion</li>
-                    <li><img class="icon" src="icons/länder/land6.png" alt="Flaggen icon" class="icon"> Estadio de la Cartuja</li>
-                    <li><img class="icon" src="icons/länder/land7.png" alt="Flaggen icon" class="icon"> Wembley Stadium</li>
-                    <li><img class="icon" src="icons/länder/land13.png" alt="Flaggen icon" class="icon"> Allianz Arena</li>
-                    <li><img class="icon" src="icons/länder/land15.png" alt="Flaggen icon" class="icon"> Johan Cruyff Arena</li>
-                    <li><img class="icon" src="icons/länder/land18.png" alt="Flaggen icon" class="icon"> Telia Parken</li>
-                    <li><img class="icon" src="icons/länder/land22.png" alt="Flaggen icon" class="icon"> Puskás Aréna</li>
-                    <li><img class="icon" src="icons/länder/land24.png" alt="Flaggen icon" class="icon"> Hampden Park</li>
-                    <li><img class="icon" src="icons/länder/land25.png" alt="Flaggen icon" class="icon"> Arena Națională</li>
-                    <li><img class="icon" src="icons/länder/land26.png" alt="Flaggen icon" class="icon"> Olympic Stadium</li>
-
+                    <li><img class="icon" src="icons/länder/land2.png" alt="Flaggen icon" class="icon"> Stadio Olimpico
+                    </li>
+                    <li><img class="icon" src="icons/länder/land4.png" alt="Flaggen icon" class="icon"> Krestowski
+                        Stadion</li>
+                    <li><img class="icon" src="icons/länder/land6.png" alt="Flaggen icon" class="icon"> Estadio de la
+                        Cartuja</li>
+                    <li><img class="icon" src="icons/länder/land7.png" alt="Flaggen icon" class="icon"> Wembley Stadium
+                    </li>
+                    <li><img class="icon" src="icons/länder/land13.png" alt="Flaggen icon" class="icon"> Allianz Arena
+                    </li>
+                    <li><img class="icon" src="icons/länder/land15.png" alt="Flaggen icon" class="icon"> Johan Cruyff
+                        Arena</li>
+                    <li><img class="icon" src="icons/länder/land18.png" alt="Flaggen icon" class="icon"> Telia Parken
+                    </li>
+                    <li><img class="icon" src="icons/länder/land22.png" alt="Flaggen icon" class="icon"> Puskás Aréna
+                    </li>
+                    <li><img class="icon" src="icons/länder/land24.png" alt="Flaggen icon" class="icon"> Hampden Park
+                    </li>
+                    <li><img class="icon" src="icons/länder/land25.png" alt="Flaggen icon" class="icon"> Arena Națională
+                    </li>
+                    <li><img class="icon" src="icons/länder/land26.png" alt="Flaggen icon" class="icon"> Olympic Stadium
+                    </li>
                 </ul>
-
             </p>
             <h2>Stadionübersichtskarte</h2>
             <form id="searchForm">
@@ -80,21 +96,25 @@
             </form>
             <datalist id="searchList">
             </datalist>
-           <div id="map"></div> 
-           <p>
-            <strong>Datenquellen:</strong> <a href="https://pixabay.com/">Pixabay</a> <a href="https://mapicons.mapsmarker.com/">MapIcons</a> <a href="https://leafletjs.com/">Leaflet</a> <a href="https://cdnjs.com/">CDNJS</a> <a href="https://www.freeflagicons.com/">FreeFlagIcons</a> <a href="https://de.uefa.com/">Uefa</a> <a href="https://de.wikipedia.org/wiki/Fu%C3%9Fball-Europameisterschaft_2021">Wikipedia</a>
-            </nav>
-           </p>
+            <div id="map"></div>
+            <p>
+                <strong>Datenquellen:</strong> <a href="https://pixabay.com/">Pixabay</a> <a
+                    href="https://mapicons.mapsmarker.com/">MapIcons</a> <a href="https://leafletjs.com/">Leaflet</a> <a
+                    href="https://cdnjs.com/">CDNJS</a> <a href="https://www.freeflagicons.com/">FreeFlagIcons</a> <a
+                    href="https://de.uefa.com/">Uefa</a> <a
+                    href="https://de.wikipedia.org/wiki/Fu%C3%9Fball-Europameisterschaft_2021">Wikipedia</a>
+                </nav>
+            </p>
         </article>
-            <footer>
-                    <nav>
-                        <a class="back" href="https://euro2021projekt.github.io/Statistik.html"><i
-                            class="fa-solid fa-circle-arrow-left"></i> Statistiken </a>
-                            <a class="next" href="https://euro2021projekt.github.io/mannschaft.html"> Mannschaften <i
-                                class="fa-solid fa-circle-arrow-right"></i></a>
-                    </nav>
-            </footer>
+        <footer>
+            <nav>
+                <a class="back" href="https://euro2021projekt.github.io/Statistik.html"><i
+                        class="fa-solid fa-circle-arrow-left"></i> Statistiken </a>
+                <a class="next" href="https://euro2021projekt.github.io/mannschaft.html"> Mannschaften <i
+                        class="fa-solid fa-circle-arrow-right"></i></a>
+            </nav>
+        </footer>
     </main>
-    
 </body>
+
 </html>
