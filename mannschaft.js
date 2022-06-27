@@ -45,10 +45,8 @@ for (let länder of LÄNDER) {
         })
 
     }).addTo(map).bindPopup(popup).on('click', function() {
-        this.bounce(1) // bounce 1 mal
-        .on('bounceend',function() {
-            console.log('bounce end');
-        }); 
+        this.bounce(1); // bounce 1 mal
+        
     });;
 }
 
