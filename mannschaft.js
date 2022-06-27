@@ -15,10 +15,10 @@ let map = L.map('map', {
 
 let layerControl = L.control.layers({
     "OpenStreetMap": startLayer,
-    "Esri Topo Map": L.tileLayer.provider("Esri.WorldTopoMap"),
+    "Open Topo Map": L.tileLayer.provider("OpenTopoMap"),
     "Esri Satellitenbild": L.tileLayer.provider("Esri.WorldImagery"),
     "Open Topo Map": L.tileLayer.provider("OpenTopoMap"),
-    "Stamen Watercolor": L.tileLayer.provider("Stamen.Watercolor"),
+   
 }).addTo(map);
 
 
