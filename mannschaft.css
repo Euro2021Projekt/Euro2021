@@ -85,3 +85,6 @@ ul {
     -webkit-columns: 2;
     -moz-columns: 2;
   }
+  img.icon {
+    width: 1em;
+}
