@@ -31,9 +31,6 @@ for (let länder of LÄNDER) {
         <h3>${länder.info2}</h3>
         <h3>${länder.info1}</h3>
         
-       
-       
-        
     `;
 
 
@@ -53,6 +50,7 @@ for (let länder of LÄNDER) {
 L.control.scale({
     imperial: false,
 }).addTo(map);
+
 
 L.control.fullscreen().addTo(map);
 
