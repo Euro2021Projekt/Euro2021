@@ -26,12 +26,13 @@ let layerControl = L.control.layers({
 // Länder anzeigen
 for (let länder of LÄNDER) {
     let popup = `
-        <h1>${länder.name}</h1>
+    <img src="${länder.image}" alt="Flagge"> <h1>${länder.name}</h1>
+    <hr>
         <h3>${länder.info2}</h3>
         <h3>${länder.info1}</h3>
         
-        <hr>
-        <img src="${länder.image}" alt="Vorschaubild">
+       
+       
         
     `;
 
@@ -43,7 +44,12 @@ for (let länder of LÄNDER) {
             popupAnchor: [0, -10]
         })
 
-    }).addTo(map).bindPopup(popup);
+    }).addTo(map).bindPopup(popup).on('click', function() {
+        this.bounce(1) // bounce 1 mal
+        .on('bounceend',function() {
+            console.log('bounce end');
+        }); 
+    });;
 }
 
 L.control.scale({
