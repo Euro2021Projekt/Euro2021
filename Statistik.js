@@ -5,22 +5,15 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-//Markercluster hinzugefügt//
-let overlay = L.markerClusterGroup({
-    disableClusteringAtZoom: 4
-});
+
 
 
 //Marker hinzugefügt//
 L.circleMarker([41.9028, 12.4964],{
-    icon: L.icon({
-    
-        iconAnchor: [16, 37],
-        popupAnchor: [0, -37]
-    })
-}  
-    ).addTo(map)
-    .bindPopup("Italien");
+    radius: 50,
+    color: "gold"
+}).addTo(map)
+    .bindPopup("<h1>Italien</h1> <h1>1. Platz</h1>");
 
  L.circleMarker([40.4168, -3.7038],{
     icon: L.icon({
@@ -40,13 +33,10 @@ L.circleMarker([41.9028, 12.4964],{
     .bindPopup("Dänemark");
 
 L.circleMarker([51.5072, -0.1276],{
-    icon: L.icon({
-       
-        iconAnchor: [16, 37],
-        popupAnchor: [0, -37]
-    })
+    radius: 40,
+    color: "silver"
 }).addTo(map)
-    .bindPopup("England");
+    .bindPopup("<h1>England</h1> <h1>2. Platz</h1>");
 
  L.circleMarker([50.8476, 4.3572],{
     icon: L.icon({
@@ -55,11 +45,10 @@ L.circleMarker([51.5072, -0.1276],{
         popupAnchor: [0, -37]
     })
 }).addTo(map)
-    .bindPopup("Belgien");
+    .bindPopup(" <h2>Belgien</h1> <h1>51 Spiele gespielt</h2>");
 
  L.circleMarker([52.3676, 4.9041],{
     icon: L.icon({
-        
         iconAnchor: [16, 37],
         popupAnchor: [0, -37]
     })
