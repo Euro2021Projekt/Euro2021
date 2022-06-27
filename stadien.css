@@ -17,6 +17,10 @@ h3 {
 
 }
 
+img.banner {
+    width: 100%;
+}
+
 
 header {
     text-align: center;
