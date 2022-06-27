@@ -1,11 +1,7 @@
-
-
 let Prag = {
     lat: 50.088611,
     lng: 14.421389,
 };
-
-
 
 let startLayer = L.tileLayer.provider("Esri.WorldImagery");
 
@@ -28,7 +24,7 @@ let layerControl = L.control.layers({
 
     "Topographische Karte": L.tileLayer.provider("OpenTopoMap"),
 
-    "Schwarz-Weiß Karte": L.tileLayer.provider("Stamen.Toner"), 
+    "Schwarz-Weiß Karte": L.tileLayer.provider("Stamen.Toner"),
 }).addTo(map);
 
 layerControl.expand();
@@ -58,7 +54,7 @@ async function loadStadien(url) {
 
     let stadionLayer = L.geoJSON(geojson, {
         pointToLayer: function (geoJsonPoint, latlng) {
-            
+
             // searchList Console
 
             searchList.innerHTML += `<option value= "${geoJsonPoint.properties.Stadio_Name}"></option`;
@@ -75,40 +71,31 @@ async function loadStadien(url) {
             return L.marker(latlng, {
                 icon: L.icon({
                     iconUrl: `icons/stadium.png`,
-                    iconAnchor: [17,36],
+                    iconAnchor: [17, 36],
                 })
             }).bindPopup(popup);
-
         }
     }).addTo(overlay);
 
     //Searchlist Funktion enablen
 
     let form = document.querySelector("#searchForm");
-    form.suchen.onclick = function() {
+    form.suchen.onclick = function () {
         console.log(form.stadion.value);
-        stadionLayer.eachLayer(function(marker){
-        //console.log(marker)
+        stadionLayer.eachLayer(function (marker) {
+            //console.log(marker)
             //console.log(marker.getLatLng())
             //console.log(marker.getPopup())
             //console.log(marker.feature.properties.Stadio_Name)
 
-            if(form.stadion.value == marker.feature.properties.Stadio_Name) {
+            if (form.stadion.value == marker.feature.properties.Stadio_Name) {
                 //console.log(marker.getLatLng())
                 //console.log(marker.getPopup())
                 //console.log(marker.feature.properties.Stadio_Name)
                 map.setView(marker.getLatLng(), 16);
                 marker.openPopup();
-                
-            
             }
         })
     }
-        
-            
-    }
-
+}
 loadStadien("data/stadien.geojson")
-
-
-
