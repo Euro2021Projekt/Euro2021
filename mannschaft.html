@@ -44,6 +44,12 @@
         integrity="sha512-qm+jY0iQ4Xf5RL79UB75REDLYD0jtvxxVZp2RVIW8sm8RNiHdeN43oksqUPrBIshJtQcVPrAL08ML2Db8fFZiA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+ <!-- Leaflet Marker bounce -->
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/hosuaby/Leaflet.SmoothMarkerBouncing@v3.0.0/dist/bundle.js"
+        crossorigin="anonymous"></script>
+
 
     <!-- eigene Stile und Hauptskript sowie Länder -->
     <link rel="stylesheet" href="mannschaft.css">
@@ -69,7 +75,7 @@
                 <ul style="list-style: none;">
                     <li><img class="icon" src="icons/länder/land1.png" alt="Flaggen icon" class="icon"> Belgien </li>
                     <li><img class="icon" src="icons/länder/land2.png" alt="Flaggen icon" class="icon"> Italien</li>
-                    <li><img class="icon" src="icons/länder/land3.png" alt="Flaggen icon" class="icon">Polen</li>
+                    <li><img class="icon" src="icons/länder/land3.png" alt="Flaggen icon" class="icon"> Polen</li>
                     <li><img class="icon" src="icons/länder/land4.png" alt="Flaggen icon" class="icon"> Russland</li>
                     <li><img class="icon" src="icons/länder/land5.png" alt="Flaggen icon" class="icon"> Ukraine</li>
                     <li><img class="icon" src="icons/länder/land6.png" alt="Flaggen icon" class="icon"> Spanien</li>
@@ -93,7 +99,7 @@
                     </li>
                     <li><img class="icon" src="icons/länder/land22.png" alt="Flaggen icon" class="icon"> Ungarn</li>
                     <li><img class="icon" src="icons/länder/land23.png" alt="Flaggen icon" class="icon"> Slowakei</li>
-                    <li><img class="icon" src="icons/länder/land24.png" alt="Flaggen icon" class="icon">Schottland</li>
+                    <li><img class="icon" src="icons/länder/land24.png" alt="Flaggen icon" class="icon"> Schottland</li>
 
 
 
@@ -103,9 +109,7 @@
 
             <h3>Übersichtskarte</h3>
             <div id="map"> </div>
-            <div>
-                <nav id="navigation"></nav>
-            </div>
+            
             <h3>Links</h3>
 
             <a href="https://de.wikipedia.org/wiki/Fu%C3%9Fball-Europameisterschaft_2021#Teilnehmer">Wikipedia</a>
@@ -123,16 +127,16 @@
 
         <footer>
             <nav>
-                <a class="back" href="https://euro2021projekt.github.io/Statistik.html"><i
-                        class="fa-solid fa-circle-arrow-left"></i> Statistiken </a>
-                <a class="next" href="https://euro2021projekt.github.io/index.html"> Stadienübersicht <i
-                        class="fa-solid fa-circle-arrow-right"></i></a>
+                <a class="back" href="https://euro2021projekt.github.io/index.html"><i
+                        class="fa-solid fa-circle-arrow-left"></i> Stadienübersicht </a>
+                <a class="next" href="https://euro2021projekt.github.io/Statistik.html"> Statistiken <i
+                        class="fa-solid fa-circle-arrow-right"></i> </a>
             </nav>
         </footer>
     </main>
 
 
-
+    
 </body>
 
 </html>
