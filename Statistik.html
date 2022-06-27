@@ -26,9 +26,13 @@
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
     <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
 
-    <!-- Leaflet MiniMap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.js" integrity="sha512-WL3nAJlWFKoDShduxQRyY3wkBnQsINXdIfWIW48ZaPgYz1wYNnxIwFMMgigzSgjNBC2WWZ8Y8/sSyUU6abuF0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.css" integrity="sha512-qm+jY0iQ4Xf5RL79UB75REDLYD0jtvxxVZp2RVIW8sm8RNiHdeN43oksqUPrBIshJtQcVPrAL08ML2Db8fFZiA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Leaflet MiniMap -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.js"
+   integrity="sha512-WL3nAJlWFKoDShduxQRyY3wkBnQsINXdIfWIW48ZaPgYz1wYNnxIwFMMgigzSgjNBC2WWZ8Y8/sSyUU6abuF0g=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.css"
+   integrity="sha512-qm+jY0iQ4Xf5RL79UB75REDLYD0jtvxxVZp2RVIW8sm8RNiHdeN43oksqUPrBIshJtQcVPrAL08ML2Db8fFZiA=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Etappen-Objekt -->
     <script src="etappen.js"></script>
@@ -82,17 +86,22 @@
                 <input type="reset" value="Reset">
             </form>
             <datalist id="searchList">
-                <option value="eins"></option>
-                <option value="zwei"></option>
-                <option value="drei"></option>
+                <option value="Deutschland"></option>
+                <option value="Schweiz"></option>
+                <option value="England"></option>
             </datalist>
             
+             <!-- eigene Stile und Hauptskript -->
+    <link rel="stylesheet" href="mannschaft.css">
+    <script defer src="Statistik.js"></script>
+    <script src="info.js"></script>
             
             <div id="map"></div>
             <div>
                 <nav id="navigation"></nav>
             </div>
-
+ 
+            
             <h3>Links</h3>
             <ul>
                 <li><a href="https://de.wikipedia.org/wiki/Fu%C3%9Fball-Europameisterschaft">Fussball-Europameisterschsaft Wikipedia,</a></li>
@@ -119,7 +128,7 @@
         <footer>
             <nav>
                 <a class="back" href="https://euro2021projekt.github.io/mannschaft.html"><i class="fa-solid fa-circle-arrow-left"></i> Mannschaften </a>
-                <a class="next" href="https://euro2021projekt.github.io/stadien.html"> Stadienübersicht <i class="fa-solid fa-circle-arrow-right"></i></a>
+                <a class="next" href="https://euro2021projekt.github.io/index.html"> Stadienübersicht <i class="fa-solid fa-circle-arrow-right"></i></a>
             </nav>
         </footer>
     </main>
