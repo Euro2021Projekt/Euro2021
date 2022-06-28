@@ -12,11 +12,18 @@ main p {
     font-family: 'Roboto', sans-serif;
 }
 
-h1,
+
 h2,
 h3 {
     font-family: 'Montserrat', sans-serif;
 
+}
+
+h1{
+
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+    text-decoration: underline;
 }
 
 img.banner {
@@ -88,3 +95,13 @@ ul {
   img.icon {
     width: 1em;
 }
+img.flag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
+}
+
+
+
+

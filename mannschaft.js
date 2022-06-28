@@ -26,7 +26,9 @@ let layerControl = L.control.layers({
 // Länder anzeigen
 for (let länder of LÄNDER) {
     let popup = `
-    <img src="${länder.image}" alt="Flagge"> <h1>${länder.name}</h1>
+    
+    <h1>${länder.name}</h1>
+    <img class=flag src="${länder.image}" alt="Flagge">
     <hr>
         <h3>${länder.info2}</h3>
         <h3>${länder.info1}</h3>
