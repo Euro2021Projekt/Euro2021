@@ -17,7 +17,7 @@ let layerControl = L.control.layers({
     "OpenStreetMap": startLayer,
     "Open Topo Map": L.tileLayer.provider("OpenTopoMap"),
     "Esri Satellitenbild": L.tileLayer.provider("Esri.WorldImagery"),
-    "Open Topo Map": L.tileLayer.provider("OpenTopoMap"),
+  
    
 }).addTo(map);
 
@@ -56,6 +56,7 @@ L.control.fullscreen().addTo(map);
 
 let miniMap = new L.Control.MiniMap(
     L.tileLayer.provider("OpenStreetMap.Mapnik"), {
-        toggleDisplay: true
+        toggleDisplay: true,
+        minimized: true
     }
 ).addTo(map);
