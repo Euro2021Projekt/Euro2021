@@ -12,9 +12,25 @@ main p {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3 {
+h1{
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 40px;
 }
+
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+}
+
+
 
 header {
     text-align: center;
@@ -29,20 +45,36 @@ img.user {
     margin-top: -50px;
 }
 
+img.table {
+    border: 1px solid gray;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 50%;
+  
+}
+
 main {
     background-color: white;
     max-width: 1024px;
     margin: auto;
+    
 }
 
+
+
 #map {
-    width: 100%;
+    width: auto;
     height: 600px;
     border: 1px solid gray;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 article {
     padding: 1em;
+    
 }
 
 article p {
@@ -54,6 +86,9 @@ article figure img {
     width: 50%;
 }
 
+.split-para      { display:block;margin-left:250px;}
+.split-para span { display:block;float:right;width:50%;margin-left:10px;margin-right: 10px;}
+
 a {
     color: black;
 }
@@ -61,6 +96,7 @@ a {
 footer {
     border-top: 1px solid black;
     padding: 1em 2em 3em 2em;
+  
 }
 
 footer .back {
@@ -95,3 +131,22 @@ footer .next {
     pointer-events: none;
 }
 
+#one {
+    text-align: center;
+    color: goldenrod;
+    font-size: 30px;
+    
+   
+}
+
+#two{
+    text-align: center;
+    color: silver;
+    font-size: 20px;
+   
+}
+
+#three{
+    text-align: center;
+    margin: 20px;
+}
