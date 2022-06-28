@@ -15,10 +15,10 @@ let map = L.map('map', {
 
 let layerControl = L.control.layers({
     "OpenStreetMap": startLayer,
-    "Esri Topo Map": L.tileLayer.provider("Esri.WorldTopoMap"),
+    "Open Topo Map": L.tileLayer.provider("OpenTopoMap"),
     "Esri Satellitenbild": L.tileLayer.provider("Esri.WorldImagery"),
     "Open Topo Map": L.tileLayer.provider("OpenTopoMap"),
-    "Stamen Watercolor": L.tileLayer.provider("Stamen.Watercolor"),
+   
 }).addTo(map);
 
 
@@ -30,9 +30,6 @@ for (let länder of LÄNDER) {
     <hr>
         <h3>${länder.info2}</h3>
         <h3>${länder.info1}</h3>
-        
-       
-       
         
     `;
 
@@ -53,6 +50,7 @@ for (let länder of LÄNDER) {
 L.control.scale({
     imperial: false,
 }).addTo(map);
+
 
 L.control.fullscreen().addTo(map);
 
