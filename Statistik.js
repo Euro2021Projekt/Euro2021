@@ -4,7 +4,25 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+L.control.scale({
+    imperial: false,
+}).addTo(map);
 
+L.control.fullscreen().addTo(map);
+
+let miniMap = new L.Control.MiniMap(
+    L.tileLayer.provider("OpenStreetMap.Mapnik"), {
+        toggleDisplay: true
+    }
+).addTo(map);
+
+var north = L.control({position: "bottomright"});
+north.onAdd = function(map) {
+    var div = L.DomUtil.create("div", "info legend");
+    div.innerHTML = '<img src="icons/nord.png">';
+    return div;
+}
+north.addTo(map);
 
 
 
