@@ -17,7 +17,7 @@ let layerControl = L.control.layers({
     "OpenStreetMap": startLayer,
     "Open Topo Map": L.tileLayer.provider("OpenTopoMap"),
     "Esri Satellitenbild": L.tileLayer.provider("Esri.WorldImagery"),
-    "Open Topo Map": L.tileLayer.provider("OpenTopoMap"),
+  
    
 }).addTo(map);
 
@@ -26,7 +26,9 @@ let layerControl = L.control.layers({
 // Länder anzeigen
 for (let länder of LÄNDER) {
     let popup = `
-    <img src="${länder.image}" alt="Flagge"> <h1>${länder.name}</h1>
+    
+    <h1>${länder.name}</h1>
+    <img class=flag src="${länder.image}" alt="Flagge">
     <hr>
         <h3>${länder.info2}</h3>
         <h3>${länder.info1}</h3>
@@ -56,6 +58,7 @@ L.control.fullscreen().addTo(map);
 
 let miniMap = new L.Control.MiniMap(
     L.tileLayer.provider("OpenStreetMap.Mapnik"), {
-        toggleDisplay: true
+        toggleDisplay: true,
+        minimized: true
     }
 ).addTo(map);
