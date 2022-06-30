@@ -82,8 +82,8 @@ const LÄNDER = [{
     "info1": "Trainer: Markku Kanerva ",
     "info2": "EM-Teilnahmen: 1",
     "image": "icons/länder/land11.png",
-    "lat":64.1466 ,
-    "lng": -21.9426
+    "lat":60.166667 ,
+    "lng":  24.933333
 },
 {
     "name": "Schweden",
