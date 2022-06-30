@@ -55,7 +55,7 @@ L.circleMarker([51.5072, -0.1276],{
  radius: 30,
  color: "blue"
 }).addTo(map)
-    .bindPopup("<h2>Belgien</h1> <h1>Gruppensieger</h1>");
+    .bindPopup("<h1>Belgien</h1> <h1>Gruppensieger</h1>");
 
  L.circleMarker([52.3676, 4.9041],{
     radius: 30,
@@ -79,7 +79,7 @@ L.circleMarker([48.8566, 2.3522],{
     radius: 30,
     color: "blue"
 }).addTo(map)
-    .bindPopup("<h2>Frankreich</h1> <h1>Gruppensieger</h1>");
+    .bindPopup("<h1>Frankreich</h1> <h1>Gruppensieger</h1>");
 
 L.circleMarker([45.8150, 15.9819],{
   radius: 20,
@@ -115,13 +115,13 @@ L.circleMarker([59.3293, 18.0686],{
     radius: 30,
     color: "blue"
 }).addTo(map)
-    .bindPopup("<h2>Schweden</h1> <h1>Gruppensieger</h1>");
+    .bindPopup("<h1>Schweden</h1> <h1>Gruppensieger</h1>");
 
  L.circleMarker([52.2297, 21.0122],{
    radius: 5,
    color: "blue"
 }).addTo(map)
-    .bindPopup("<h2>Polen</h1> <h1>Gruppenvierter</h1>");
+    .bindPopup("<h1>Polen</h1> <h1>Gruppenvierter</h1>");
 
 L.circleMarker([51.4837, -3.1681],{
    radius: 20,
@@ -133,13 +133,13 @@ L.circleMarker([51.4837, -3.1681],{
    radius: 5,
    color: "blue"
 }).addTo(map)
-    .bindPopup("<h2>Ungarn</h1> <h1>Gruppenvierter</h1>");
+    .bindPopup("<h1>Ungarn</h1> <h1>Gruppenvierter</h1>");
 
 L.cirlceMarker([55.7558, 37.6173],{
   radius: 5,
   color: "blue"
 }).addTo(map)
-    .bindPopup("<h2>Russland</h1> <h1>Gruppenvierter</h1>");
+    .bindPopup("<h1>Russland</h1> <h1>Gruppenvierter</h1>");
 
 L.circleMarker([48.1486, 17.1077],{
   radius: 10,
@@ -151,19 +151,19 @@ L.circleMarker([41.9981, 21.4254],{
   radius: 5,
   color: "blue"
 }).addTo(map)
-    .bindPopup("<h2>Nordmazedonien</h1> <h1>Gruppenvierter</h1>");
+    .bindPopup("<h1>Nordmazedonien</h1> <h1>Gruppenvierter</h1>");
 
 L.circleMarker([55.9533, -3.1883],{
     radius: 5,
     color: "blue"
 }).addTo(map)
-    .bindPopup("<h2>Schottland</h1> <h1>Gruppenvierter</h1>");
+    .bindPopup("<h1>Schottland</h1> <h1>Gruppenvierter</h1>");
 
 L.circleMarker([39.9334, 32.8597],{
     radius: 5,
     color: "blue"
 }).addTo(map)
-    .bindPopup("<h2>Türkei</h1> <h1>Gruppenvierter</h1>");
+    .bindPopup("<h1>Türkei</h1> <h1>Gruppenvierter</h1>");
 
 L.circleMarker([60.1699, 24.9384],{
   radius: 10,
